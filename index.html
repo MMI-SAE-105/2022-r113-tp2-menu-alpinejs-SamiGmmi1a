@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen: false}" : x-bind:class="{noscroll: menuIsOpen}">
+<html lang="en" x-data="{menuIsOpen: false, accordeon1IsOpen: false, accordeon2IsOpen: false, accordeon3IsOpen: false}" : x-bind:class="{noscroll: menuIsOpen}">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -54,6 +54,7 @@
 
 <nav>
   <d1>
+    <button aria-controls="mainNav" @click="accordeon1IsOpen = ! accordeon1IsOpen" class="header_menubtn">menu</button>
     <dt>Lorem.</dt>
     <dd>Lorem ipsum dolor sit amet.</dd>
   </d1>

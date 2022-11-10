@@ -52,11 +52,10 @@
   </body>
 </html>
 
-<nav>
-        <d1>
+
+  <d1>
     <button aria-controls="mainNav" @click="accordeon1IsOpen = ! accordeon1IsOpen" class="header_menubtn">Lorem</button>
-    <nav id="mainNav" x-show="accordeon1IsOpen">
-    <dd>Lorem ipsum dolor sit amet.</dd>
+    <dd x-show="accordeon1IsOpen"> Lorem ipsum dolor sit amet.</dd>
   </d1>
   <d1>
     <button aria-controls="mainNav" @click="accordeon2IsOpen = ! accordeon2IsOpen" class="header_menubtn">Reprehenderit.</button>
@@ -68,4 +67,3 @@
     <nav id="mainNav" x-show="accordeon3IsOpen">
     <dd>Ducimus modi harum cumque labore.</dd>
   </d1>
-</nav>

@@ -36,10 +36,14 @@
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menubtn">menu</button>
       <h1>test de menu</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+
+          <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">fermer
+          <nav id="mainNav" x-show="index.html" x-transition.duration.800ms class="menu"></nav>
+        </button>
           <ul>
             <li><a href="item1.html">item 1</a></li>
             <li><a href="item2.html">item 2</a></li>
-            <li><a href="#">item 3</a></li>
+            <li><a href="item3.html">item 3</a></li>
           </ul>
         </nav>
     </header>

@@ -21,6 +21,8 @@
         position: relative;
         z-index: 10;
       }
+
+      }
       .noscroll,
       .noscroll body {
       overflow: hidden;
@@ -34,7 +36,6 @@
       <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header_menubtn">menu</button>
       <h1>test de menu</h1>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-          <button aria-controls="mainNav" @click="menuIsOpen = menuIsOpen" class="header_homebtn">close</button>
           <ul>
             <li><a href="#">item 1</a></li>
             <li><a href="#">item 2</a></li>
@@ -60,11 +61,9 @@
   </d1>
   <d1>
     <button aria-controls="mainNav" @click="accordeon2IsOpen = ! accordeon2IsOpen" class="header_menubtn">Reprehenderit.</button>
-    <nav id="mainNav" x-show="accordeon2IsOpen">
-    <dd>Provident facere accusamus voluptate corporis.</dd>
+    <dd x-show="accordeon2IsOpen">Provident facere accusamus voluptate corporis.</dd>
   </d1>
   <d1>
     <button aria-controls="mainNav" @click="accordeon3IsOpen = ! accordeon3IsOpen" class="header_menubtn">Officia.</button>
-    <nav id="mainNav" x-show="accordeon3IsOpen">
-    <dd>Ducimus modi harum cumque labore.</dd>
+    <dd x-show="accordeon3IsOpen">Ducimus modi harum cumque labore.</dd>
   </d1>

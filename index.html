@@ -44,7 +44,7 @@
         </nav>
     </header>
     <!-- h2>lorem2^p>lorem -->
-    <h2>Lorem, ipsum.</h2>
+    <h2 class="header">Lorem, ipsum.</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
       mollitia adipisci alias error laboriosam numquam incidunt magni eum eos
@@ -55,15 +55,29 @@
 </html>
 
 
-  <d1>
-    <button aria-controls="mainNav" @click="accordeon1IsOpen = ! accordeon1IsOpen" class="header_menubtn">Lorem</button>
-    <dd x-show="accordeon1IsOpen"> Lorem ipsum dolor sit amet.</dd>
-  </d1>
-  <d1>
-    <button aria-controls="mainNav" @click="accordeon2IsOpen = ! accordeon2IsOpen" class="header_menubtn">Reprehenderit.</button>
-    <dd x-show="accordeon2IsOpen">Provident facere accusamus voluptate corporis.</dd>
-  </d1>
-  <d1>
-    <button aria-controls="mainNav" @click="accordeon3IsOpen = ! accordeon3IsOpen" class="header_menubtn">Officia.</button>
-    <dd x-show="accordeon3IsOpen">Ducimus modi harum cumque labore.</dd>
-  </d1>
+  <nav>
+    <ul>
+      <li>
+        <d1>
+          <button aria-controls="mainNav" @click="accordeon1IsOpen = ! accordeon1IsOpen" class="header_menubtn">Lorem</button>
+          <dd x-show="accordeon1IsOpen"> Lorem ipsum dolor sit amet.</dd>
+        </d1>
+      </li>
+
+      
+      <li>
+        <d1>
+          <button aria-controls="mainNav" @click="accordeon2IsOpen = ! accordeon2IsOpen" class="header_menubtn">Reprehenderit.</button>
+          <dd x-show="accordeon2IsOpen">Provident facere accusamus voluptate corporis.</dd>
+        </d1>
+      </li>
+
+      <li>
+        <d1>
+          <button aria-controls="mainNav" @click="accordeon3IsOpen = ! accordeon3IsOpen" class="header_menubtn">Officia.</button>
+          <dd x-show="accordeon3IsOpen">Ducimus modi harum cumque labore.</dd>
+        </d1>
+      </li>
+
+    </ul>
+  </nav>
